@@ -18,7 +18,7 @@
 |---|---|
 | 이지홍 | [lee-ji-hong](https://github.com/lee-ji-hong) |
 | 김도영 | [CreatorDodo](https://github.com/CreatorDodo) |
-| 신철 | - |
+| 신철 | [shinchul](github.com/shinchul) |
 | 이정아 | [jeongah2651](https://github.com/jeongah2651) |
 | 최기환 | [gihwan-dev](https://github.com/gihwan-dev) |
 | 최규성 | [cks612](https://github.com/cks612) |
