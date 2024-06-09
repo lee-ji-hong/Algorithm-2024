@@ -47,24 +47,24 @@ function getDay(remain, target) {
   return day;
 }
 
-// function solution(prices) {
-//   const stack = [];
-//   const dp = Array.from(
-//     { length: prices.length },
-//     (_, i) => prices.length - i - 1
-//   );
+function solution(prices) {
+  const stack = [];
+  const dp = Array.from(
+    { length: prices.length },
+    (_, i) => prices.length - i - 1
+  );
 
-//   prices.forEach((price, index) => {
-//     while (stack.length && prices[stack[stack.length - 1]] > price) {
-//       const tempIndex = stack[stack.length - 1];
-//       dp[tempIndex] = index - tempIndex;
-//       stack.pop();
-//     }
+  prices.forEach((price, index) => {
+    while (stack.length && prices[stack[stack.length - 1]] > price) {
+      const tempIndex = stack[stack.length - 1];
+      dp[tempIndex] = index - tempIndex;
+      stack.pop();
+    }
 
-//     stack.push(index);
-//   });
+    stack.push(index);
+  });
 
-//   return dp;
-// }
+  return dp;
+}
 
 // console.log(solution([1, 2, 3, 2, 3])); // [4, 3, 1, 1, 0]
