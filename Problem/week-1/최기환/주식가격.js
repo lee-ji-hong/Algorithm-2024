@@ -24,7 +24,8 @@ function solution(prices) {
   let result = [];
 
   prices.forEach((price, index) => {
-    const remainArr = prices.splice(index + 1);
+    const remainArr = prices.slice(index + 1);
+
     const day = getDay(remainArr, price);
 
     result.push(day);
@@ -35,12 +36,15 @@ function solution(prices) {
 
 function getDay(remain, target) {
   let day = 0;
+
   for (const cmp of remain) {
     day++;
+
     if (cmp < target) {
       return day;
     }
   }
+  return day;
 }
 
 // function solution(prices) {
