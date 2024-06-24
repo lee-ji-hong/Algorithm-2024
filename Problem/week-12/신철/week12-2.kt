@@ -43,7 +43,9 @@ fun main() {
             needToBuild[i]++
         }
     }
-    
+
+    graph.sorted()
+
     // 위상 정렬을 위한 큐
     val queue: Queue<Int> = LinkedList()
     
